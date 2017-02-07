@@ -68,5 +68,8 @@ dependencies {
     }
 //    compile group: 'com.alibaba', name: 'dubbo', version: '2.5.3'
 
-
+    compile ('org.apache.zookeeper:zookeeper:3.3.3'){
+        exclude (group:"org.slf4j")
+    }
+    compile "com.github.sgroschupf:zkclient:0.1"
 }
